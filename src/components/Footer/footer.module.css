@@ -1,0 +1,7 @@
+.footer-container a {
+  transition: color 0.15s ease-in-out;
+}
+
+.footer-container a:hover {
+  color: #000;
+}

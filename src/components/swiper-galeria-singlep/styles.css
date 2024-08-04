@@ -1,0 +1,107 @@
+/* Móviles */
+.swiperDynamicMovil .swiperImagenPrincipal .swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+/* THUMBS */
+
+.swiperDynamicMovil .swiperThumbs .swiper-slide,
+.swiperDynamicDesktop .swiperThumbs .swiper-slide {
+  opacity: 0.4;
+  transition: 0.2s
+}
+
+.swiperDynamicMovil .swiperThumbs .swiper-slide:hover,
+.swiperDynamicDesktop .swiperThumbs .swiper-slide:hover {
+  opacity: 1;
+}
+
+.swiperDynamicMovil .swiperThumbs .swiper-slide-thumb-active,
+.swiperDynamicDesktop .swiperThumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-prev,
+.swiperDynamicMovil .divThumbs .swiper-button-next,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-prev,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-next {
+  color: #545454;
+  background-color: #D4D4D459;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  opacity: 1;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 60%;
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-prev {
+  left: 0px;
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-next {
+  right: 0px;
+}
+
+@media (min-width: 768px){
+  .swiperDynamicMovil .divThumbs .swiper-button-prev,
+  .swiperDynamicMovil .divThumbs .swiper-button-next {
+    top: 55%;
+  }
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-prev,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-prev {
+  background-image: url(../../../public/images/flecha-izq-swiper.png);
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-next,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-next {
+  background-image: url(../../../public/images/flecha-der-swiper.png);
+}
+
+.swiperDynamicMovil .divThumbs .swiper-button-prev::after,
+.swiperDynamicMovil .divThumbs .swiper-button-next::after,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-prev::after,
+.swiperDynamicDesktop .swiperThumbs .swiper-button-next::after {
+  content: '';
+}
+
+/* Desktop */
+
+.swiperDynamicDesktop .swiperThumbs {
+  max-width: 18.5%;
+}
+
+.swiperDynamicDesktop .swiperThumbs .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .swiperDynamicDesktop .swiperThumbs .swiper-slide {
+  max-width: 90%;  
+} */
+
+.swiperDynamicDesktop .swiperImagenPrincipal {
+  width: 100%;
+  max-width: 81.5%;
+}
+
+.swiperDynamicDesktop .swiper-button-prev {
+  top: 25px!important;
+  bottom: auto!important;
+  left: 50%;
+  transform: translateY(50%);
+  rotate: 90deg;
+}
+
+.swiperDynamicDesktop .swiper-button-next {
+  top: auto!important;
+  bottom: 0px!important;
+  left: 50%;
+  transform: translateY(50%);
+  rotate: 90deg;
+}

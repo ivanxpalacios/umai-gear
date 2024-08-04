@@ -1,0 +1,46 @@
+.card_container {
+  transition: box-shadow 0.2s;
+  width: 320px;
+}
+
+.card_container:hover {
+  box-shadow: 0px 7px 20.6px -7px #0000002B;
+
+  .icon {
+    opacity: 1;
+  }
+
+  .boton_agregar {
+    opacity: 1;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  opacity: 0;
+  right: 16px;
+  transition: opacity 0.2s;
+}
+
+.discount {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background-color: #C8A976;
+  color: #000;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton_agregar {
+  opacity: 0;
+  transition: opacity 0.2s;
+}

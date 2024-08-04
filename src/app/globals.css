@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p, h1, h2, h3, h4, h5, h6, button {
+  font-weight: 300;
+}
+
+@media (min-width: 1024px){
+  .regular-text-container p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.ff-fairplay {
+  font-family: var(--font-playfair-display);
+}
+
+.ff-jost {
+  font-family: var(--font-jost);
+}
+
+h1.section-header {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+@media (min-width: 1024px){
+  h1.section-header {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+.container-mx {
+  max-width: 1400px;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+
+
+
+/* Checkbox */
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #CFCFCF;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: transparent;
+}
+
+.checkbox:checked::before {
+  content: '✔';
+  font-size: 12px;
+  line-height: 12px;
+  color: #D9D9D9;
+
+  position: absolute;
+  transform: translateX(-50%);
+  top: 10%;
+  left: 50%;
+}
+
+.checkbox:focus {
+  outline: max(2px, 0.15em) solid #CFCFCF;
+  outline-offset: max(2px, 0.15em);
+}
+
+
+
+
+/* Loader */
+
+.loader {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+
+
+
+/* Animaciones */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translateXIn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes translateXOut {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animation-translateX {
+  animation: translateXOut 0.15s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.animation-translateX:hover {
+  animation: translateXIn 0.15s ease-in-out;
+  animation-fill-mode: forwards;
+}

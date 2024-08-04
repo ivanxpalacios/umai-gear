@@ -1,0 +1,13 @@
+.hero_home_div {
+  background-image: url(../../../public/images/hero-home-desktop.jpeg);
+  background-size: cover;
+  background-position: 60% center;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px){
+  .hero_home_div {
+    height: 780px;
+  }
+}

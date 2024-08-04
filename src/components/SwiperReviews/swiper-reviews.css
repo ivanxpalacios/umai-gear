@@ -1,0 +1,15 @@
+.swiper-reviews .swiper-pagination {
+  position: static;
+  margin-top: 20px;
+}
+
+.swiper-reviews .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px!important;
+  background-color: #676767;
+}
+
+.swiper-reviews .swiper-pagination-bullet-active {
+  background-color: #C8A976;
+}
